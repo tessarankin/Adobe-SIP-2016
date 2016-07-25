@@ -1,0 +1,36 @@
+body{
+    background-color:#dac5e5;
+}
+
+#rose{
+    display: inline-block;
+}
+
+#letters{
+    display: inline-block;
+}
+
+#Header_T{
+    display: inline-block;
+    color: black;
+    font-size:100px;
+}
+
+#Header_E{
+    color:red;
+    font-size:100px;
+}
+
+#Header_S{
+    color:black;
+    font-size:100px;
+}
+
+#Header_S_1{
+    color:red;
+    font-size:100px;
+}
+
+div {
+    heigth:150px;
+}
