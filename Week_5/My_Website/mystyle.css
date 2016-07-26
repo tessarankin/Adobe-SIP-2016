@@ -1,95 +1,103 @@
 body{
-    background-color:#dac5e5;
-}
-
-#rose{
-    display: inline-block;
+    background-color:white;
 }
 
 .letters{
     display: inline-block;
+    
 }
 
-#T{
-    display:block;
-}
-    #Header_T{
-        font-family:"Verdana";
-        display: inline-block;
-        color: black;
-        font-size:100px;
-    }
-    #T_text{
-        font-family:"Verdana";
-        display: inline-block;
-        color:red;
-        font-size:20px;
+    #T{
+        display:block;
+        /*display:none;
     }
 
-#E{
-    display:block;
-}
+    #p:hover #T{
+        display: inline-block;*/
+    }
+        #Header_T{
+            font-family:"Helvetica";
+            display: inline-block;
+            color: black;
+            font-size:200px;
+        }
+        #T_text{
+            font-family:"Candara";
+            display: inline-block;
+            color:red;
+            font-size:20px;
+        }
 
-    #Header_E{
-        font-family:"Verdana";
-        display:inline-block;
-        color:red;
-        font-size:100px;
-    }
-    #E_text{
-        font-family:"Verdana";
-        display:inline-block;
-        color:red;
-        font-size:20px;
-    }
-
-#S{
-    display:block;
-}
-    #Header_S{
-        font-family:"Verdana";
-        display:inline-block;
-        color:black;
-        font-size:100px;
-    }
-    #S_text{
-        font-family:"Verdana";
-        display:inline-block;
-        color:red;
-        font-size:20px;
+    #E{
+        display:block;
     }
 
-#S1{
-    display:block;
+        #Header_E{
+            font-family:"Helvetica";
+            display:inline-block;
+            color:black;
+            font-size:200px;
+        }
+        #E_text{
+            font-family:"Candara";
+            display:inline-block;
+            color:red;
+            font-size:20px;
+        }
+
+    #S{
+        display:block;
+    } 
+        #Header_S{
+            font-family:"Helvetica";
+            display:inline-block;
+            color:black;
+            font-size:200px;
+        }
+        #S_text{
+            font-family:"Candara";
+            display:inline-block;
+            color:red;
+            font-size:20px;
+        }
+
+    #Ss{
+        display:block;
+    }
+        #Header_S_s{
+            font-family:"Helvetica";
+            display:inline-block;
+            color:black;
+            font-size:200px;
+        }
+        #S_text_s{
+            font-family:"Candara";
+            display:inline-block;
+            color:red;
+            font-size:20px;
+        }
+    #A{
+        display:block;
+    }
+        #Header_A{
+            font-family:"Helvetica";
+            display:inline-block;
+            color:black;
+            font-size:200px;
+        }
+        #A_text{
+            font-family:"Candara";
+            display:inline-block;
+            color:red;
+            font-size:20px;
+        }
+
+#rose{
+    display: inline-block;
+    position:right;
+    padding-left: 500px;
 }
-    #Header_S_1{
-        font-family:"Verdana";
-        display:inline-block;
-        color:black;
-        font-size:100px;
-    }
-    #S_text_1{
-        font-family:"Verdana";
-        display:inline-block;
-        color:red;
-        font-size:20px;
-    }
-#A{
-    display:block;
-}
-    #Header_A{
-        font-family:"Verdana";
-        display:inline-block;
-        color:black;
-        font-size:100px;
-    }
-    #A_text{
-        font-family:"Verdana";
-        display:inline-block;
-        color:red;
-        font-size:20px;
-    }
 
 div {
-    height:150px;
+    height:200px;
 }
