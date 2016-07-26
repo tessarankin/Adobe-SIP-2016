@@ -6,31 +6,90 @@ body{
     display: inline-block;
 }
 
-#letters{
+.letters{
     display: inline-block;
 }
 
-#Header_T{
-    display: inline-block;
-    color: black;
-    font-size:100px;
+#T{
+    display:block;
+}
+    #Header_T{
+        font-family:"Verdana";
+        display: inline-block;
+        color: black;
+        font-size:100px;
+    }
+    #T_text{
+        font-family:"Verdana";
+        display: inline-block;
+        color:red;
+        font-size:20px;
+    }
+
+#E{
+    display:block;
 }
 
-#Header_E{
-    color:red;
-    font-size:100px;
-}
+    #Header_E{
+        font-family:"Verdana";
+        display:inline-block;
+        color:red;
+        font-size:100px;
+    }
+    #E_text{
+        font-family:"Verdana";
+        display:inline-block;
+        color:red;
+        font-size:20px;
+    }
 
-#Header_S{
-    color:black;
-    font-size:100px;
+#S{
+    display:block;
 }
+    #Header_S{
+        font-family:"Verdana";
+        display:inline-block;
+        color:black;
+        font-size:100px;
+    }
+    #S_text{
+        font-family:"Verdana";
+        display:inline-block;
+        color:red;
+        font-size:20px;
+    }
 
-#Header_S_1{
-    color:red;
-    font-size:100px;
+#S1{
+    display:block;
 }
+    #Header_S_1{
+        font-family:"Verdana";
+        display:inline-block;
+        color:black;
+        font-size:100px;
+    }
+    #S_text_1{
+        font-family:"Verdana";
+        display:inline-block;
+        color:red;
+        font-size:20px;
+    }
+#A{
+    display:block;
+}
+    #Header_A{
+        font-family:"Verdana";
+        display:inline-block;
+        color:black;
+        font-size:100px;
+    }
+    #A_text{
+        font-family:"Verdana";
+        display:inline-block;
+        color:red;
+        font-size:20px;
+    }
 
 div {
-    heigth:150px;
+    height:150px;
 }
