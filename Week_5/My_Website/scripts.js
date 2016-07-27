@@ -18,3 +18,8 @@ function ome(){
 function oml(){
     $(this).css("background-color", "transparent");
 }
+
+$('h1').hover(function(){
+    $('div.letter').text($(this).children())
+});
+
