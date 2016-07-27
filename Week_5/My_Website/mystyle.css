@@ -9,6 +9,7 @@ body{
 
     #T{
         display:block;
+        margin:0;
         /*display:none;
     }
 
@@ -24,7 +25,7 @@ body{
         #T_text{
             font-family:"Candara";
             display: inline-block;
-            color:red;
+            color:dimgrey;
             font-size:20px;
         }
 
@@ -41,7 +42,7 @@ body{
         #E_text{
             font-family:"Candara";
             display:inline-block;
-            color:red;
+            color:dimgrey;
             font-size:20px;
         }
 
@@ -57,7 +58,7 @@ body{
         #S_text{
             font-family:"Candara";
             display:inline-block;
-            color:red;
+            color:dimgrey;
             font-size:20px;
         }
 
@@ -73,7 +74,7 @@ body{
         #S_text_s{
             font-family:"Candara";
             display:inline-block;
-            color:red;
+            color:dimgrey;
             font-size:20px;
         }
     #A{
@@ -88,14 +89,22 @@ body{
         #A_text{
             font-family:"Candara";
             display:inline-block;
-            color:red;
+            color:dimgrey;
             font-size:20px;
         }
+
+    ul{
+        list-style-type:none;
+        margin:0;
+        padding;
+        overflow:hidden;
+        background-color: transparent;
+    }
 
 #rose{
     display: inline-block;
     position:right;
-    padding-left: 500px;
+    padding-left: 0px;
 }
 
 div {
