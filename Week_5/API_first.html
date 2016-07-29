@@ -1,0 +1,122 @@
+<!-- <!DOCTYPE html>
+<html>
+  <head>
+    <meta name ="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>Simple markers</title>
+    <style>
+       #map {
+        width: 100%;
+        height: 400px;
+        background-color: grey;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>My Google Maps Demo</h3>
+    <div id="map"></div>
+    <script>
+      function initMap() {
+        var myLatLng = {lat: 60.155595, lng: 24.778621}
+        var mapDiv = document.getElementById('map');
+        var map = new google.maps.Map(mapDiv, {
+            center: myLatLng,
+            zoom: 8
+        });
+
+      var marker = new.google.maps.Marker({
+        position: myLatLng,
+        map: map,
+        title: 'Finland'
+      })
+    }
+    </script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB6auMswjQc0G9BivFzndXCCK6fzGImDlQ&callback=initMap">
+    </script>
+  </body>
+</html> -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>My Favorite Places</title>
+    <style>
+      html, body {
+        width: 100%;
+        height: 400px;
+        background-color: white;
+      }
+      #map {
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="map"></div>
+    <script>
+
+      function initMap() {
+        var FinlandLatLng = {lat: 60.155595, lng: 24.778621};
+        var HomeLatLng = {lat: 39.609090, lng: -104.798297};
+        var TomChrissyLatLng = {lat: 37.813348, lng: -122.241373};
+        var SchoolLatLng = {lat:39.62791, lng: -104.79667};
+        var AustraliaLatLng = {lat: -25.2744, lng: 133.7751};
+        var FijiLatLng = {lat: -17.713371, lng: 178.065033};
+        var NewHomeLatLng = {lat: 39.616373,  lng: -104.905644};
+
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 8,
+          center: FinlandLatLng,         
+          mapTypeId: google.maps.MapTypeId.HYBRID
+        });
+
+        var Finland_marker = new google.maps.Marker({
+          position: FinlandLatLng,
+          map: map,
+          title: 'Finland'        
+        });
+
+        var Home_marker = new google.maps.Marker({
+          position: HomeLatLng,
+          map:map,
+          title: 'Home Sweet Home'
+        });
+
+        var Tom_Chrissy_marker = new google.maps.Marker({
+          position: TomChrissyLatLng,
+          map: map,
+          title: 'San Francisco Home'
+        });
+
+        var School_marker = new google.maps.Marker({
+          position: SchoolLatLng,
+          map:map,
+          title: 'Hell'
+        });
+
+        var Australia_marker = new google.maps.Marker({
+          position: AustraliaLatLng,
+          map: map,
+          title: 'Where the fammily is'
+        });
+
+        var Fiji_marker = new google.maps.Marker({
+          position: FijiLatLng,
+          map:map,
+          title: 'The best vacation of my life'
+        });
+
+        var New_Home_marker = new google.maps.Marker({
+          position: NewHomeLatLng,
+          map:map,
+          title: 'New Home'
+        })
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB6auMswjQc0G9BivFzndXCCK6fzGImDlQ&callback=initMap">
+    </script>
+  </body>
+</html>
