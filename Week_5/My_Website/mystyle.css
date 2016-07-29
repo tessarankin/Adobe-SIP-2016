@@ -2,6 +2,7 @@ body{
     background-color:white;
     font:1em/1.4 sans-serif;
     font-size: 50px;
+    margin-bottom: 10px;
 }
 
 .letters{
@@ -23,14 +24,17 @@ li {
         display: inline-block;
         text-decoration: none;
         transition: max-width 1s ease-out .1s, opacity 1s ease-out .1s, color;
+        button.link { background:none;border:none;
+        font-size:30px;
     }
+}
         li a:hover {
             color: #c33;
         }
         li a i {
             float:right;
             display: block;
-            padding-right: 1em;
+            padding-right: 0em;
             font:1em/1 'rokkitt', sans-serif;
         }
     li b {
@@ -48,6 +52,9 @@ li {
         }
 
 
+.TESSA p{
+    font-size:15px;
+}
     /*#T{
         display:block;
         margin:0;
@@ -146,6 +153,8 @@ li {
     display: inline-block;
     position:right;
     padding-left: 0px;
+    height="800px";
+    width "100%";
 }
 
 div {

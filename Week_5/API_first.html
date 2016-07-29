@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 <!-- <!DOCTYPE html>
 <html>
   <head>
@@ -6,6 +7,13 @@
     <title>Simple markers</title>
     <style>
        #map {
+=======
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      #map {
+>>>>>>> Stashed changes
         width: 100%;
         height: 400px;
         background-color: grey;
@@ -17,6 +25,7 @@
     <div id="map"></div>
     <script>
       function initMap() {
+<<<<<<< Updated upstream
         var myLatLng = {lat: 60.155595, lng: 24.778621}
         var mapDiv = document.getElementById('map');
         var map = new google.maps.Map(mapDiv, {
@@ -117,6 +126,17 @@
     </script>
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB6auMswjQc0G9BivFzndXCCK6fzGImDlQ&callback=initMap">
+=======
+        var mapDiv = document.getElementById('map');
+        var map = new google.maps.Map(mapDiv, {
+            center: {lat: 44.540, lng: -78.546},
+            zoom: 8
+        });
+      }
+    </script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
+>>>>>>> Stashed changes
     </script>
   </body>
 </html>
