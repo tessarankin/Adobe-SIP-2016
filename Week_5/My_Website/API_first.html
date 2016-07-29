@@ -1,50 +1,3 @@
-<<<<<<< Updated upstream
-<!-- <!DOCTYPE html>
-<html>
-  <head>
-    <meta name ="viewport" content="initial-scale=1.0, user-scalable=no">
-    <meta charset="utf-8">
-    <title>Simple markers</title>
-    <style>
-       #map {
-=======
-<!DOCTYPE html>
-<html>
-  <head>
-    <style>
-      #map {
->>>>>>> Stashed changes
-        width: 100%;
-        height: 400px;
-        background-color: grey;
-      }
-    </style>
-  </head>
-  <body>
-    <h3>My Google Maps Demo</h3>
-    <div id="map"></div>
-    <script>
-      function initMap() {
-<<<<<<< Updated upstream
-        var myLatLng = {lat: 60.155595, lng: 24.778621}
-        var mapDiv = document.getElementById('map');
-        var map = new google.maps.Map(mapDiv, {
-            center: myLatLng,
-            zoom: 8
-        });
-
-      var marker = new.google.maps.Marker({
-        position: myLatLng,
-        map: map,
-        title: 'Finland'
-      })
-    }
-    </script>
-    <script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB6auMswjQc0G9BivFzndXCCK6fzGImDlQ&callback=initMap">
-    </script>
-  </body>
-</html> -->
 <!DOCTYPE html>
 <html>
   <head>
@@ -65,7 +18,6 @@
   <body>
     <div id="map"></div>
     <script>
-
       function initMap() {
         var FinlandLatLng = {lat: 60.155595, lng: 24.778621};
         var HomeLatLng = {lat: 39.609090, lng: -104.798297};
@@ -74,10 +26,10 @@
         var AustraliaLatLng = {lat: -25.2744, lng: 133.7751};
         var FijiLatLng = {lat: -17.713371, lng: 178.065033};
         var NewHomeLatLng = {lat: 39.616373,  lng: -104.905644};
-
+        
         var map = new google.maps.Map(document.getElementById('map'), {
           zoom: 8,
-          center: FinlandLatLng,         
+          center: HomeLatLng,         
           mapTypeId: google.maps.MapTypeId.HYBRID
         });
 
@@ -87,56 +39,121 @@
           title: 'Finland'        
         });
 
+        var infoWindow = new google.maps.InfoWindow({
+          content: "FIIINNNLLLLAAAANNNNDDDDD"
+        });
+
+        Finland_marker.addListener('click', function(){
+          infoWindow.open(map, Finland_marker);
+        });
+
+
+
         var Home_marker = new google.maps.Marker({
           position: HomeLatLng,
           map:map,
           title: 'Home Sweet Home'
+         });
+
+        var infoWindowHome = new google.maps.InfoWindow({
+          content: "HHOOOOMMMMEEEE"
         });
+
+        Home_marker.addListener('click', function(){
+          infoWindowHome.open(map, Home_marker);
+        
+        });
+
+
 
         var Tom_Chrissy_marker = new google.maps.Marker({
           position: TomChrissyLatLng,
           map: map,
           title: 'San Francisco Home'
         });
+        var infoWindowTomChrissy = new google.maps.InfoWindow({
+          content: "Second home"
+        });
+
+        Tom_Chrissy_marker.addListener('click', function(){
+          infoWindowTomChrissy.open(map, Tom_Chrissy_marker);
+        
+        });
+
+
+
 
         var School_marker = new google.maps.Marker({
           position: SchoolLatLng,
           map:map,
           title: 'Hell'
         });
+        var infoWindowSchool = new google.maps.InfoWindow({
+          content: "Hell"
+        });
+
+        School_marker.addListener('click', function(){
+          infoWindowSchool.open(map, School_marker);
+        
+        });
+
+
+
 
         var Australia_marker = new google.maps.Marker({
           position: AustraliaLatLng,
           map: map,
           title: 'Where the fammily is'
         });
+        var infoWindowAustralia = new google.maps.InfoWindow({
+          content: "Family"
+        });
+
+        Australia_marker.addListener('click', function(){
+          infoWindowAustralia.open(map, Australia_marker);
+        
+        });
+
+
+
 
         var Fiji_marker = new google.maps.Marker({
           position: FijiLatLng,
           map:map,
           title: 'The best vacation of my life'
         });
+        var infoWindowFiji = new google.maps.InfoWindow({
+          content: "FIIJJJJIII"
+        });
 
+        Fiji_marker.addListener('click', function(){
+          infoWindowFiji.open(map, Fiji_marker);
+        
+        });
+
+
+
+
+
+        
         var New_Home_marker = new google.maps.Marker({
           position: NewHomeLatLng,
           map:map,
-          title: 'New Home'
-        })
-      }
-    </script>
-    <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB6auMswjQc0G9BivFzndXCCK6fzGImDlQ&callback=initMap">
-=======
-        var mapDiv = document.getElementById('map');
-        var map = new google.maps.Map(mapDiv, {
-            center: {lat: 44.540, lng: -78.546},
-            zoom: 8
+          title: 'New Home Sweet Home'
+         });
+
+        var infoWindowNewHome = new google.maps.InfoWindow({
+          content: "New Home!"
+        });
+
+        New_Home_marker.addListener('click', function(){
+          infoWindowNewHome.open(map, New_Home_marker);
+        
         });
       }
     </script>
     <script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
->>>>>>> Stashed changes
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB6auMswjQc0G9BivFzndXCCK6fzGImDlQ&callback=initMap">
     </script>
   </body>
 </html>
